@@ -1,0 +1,11 @@
+.card {
+  background-color: var(--clr-grey-20);
+  padding: 2rem;
+  border-radius: var(--radius-md);
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.2);
+}
+
+.link {
+  text-decoration: none;
+  color: inherit;
+}

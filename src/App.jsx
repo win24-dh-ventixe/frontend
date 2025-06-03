@@ -1,23 +1,19 @@
 import { Route, Routes } from "react-router-dom";
-import "./App.css";
-import CenterLayout from './assets/layouts/CenterLayout'
-import PortalLayout from './assets/layouts/PortalLayout'
+import EventCard from "./components/events/EventCard";
+
+const sampleEvent = {
+  id: 1,
+  name: "Festival Trappramlarn",
+  category: "Musik",
+  location: "Etern",
+  date: "2025-07-11T15:00:00Z",
+  price: 299,
+};
 
 function App() {
   return (
     <Routes>
-      <Route element={<CenterLayout />}>
-        <Route index element={<MarketingHome />} />
-        <Route path="contact" element={<Contact />} />
-      </Route>
-
-      <Route path="admin">
-        <Route index element={<ProjectsHome />} />
-        <Route element={<ProjectsLayout />}>
-          <Route path=":pid" element={<Project />} />
-          <Route path=":pid/edit" element={<EditProject />} />
-        </Route>
-      </Route>
+      <Route path="/" element={<EventCard event={sampleEvent} />} />
     </Routes>
   );
 }
