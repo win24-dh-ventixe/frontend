@@ -1,4 +1,6 @@
-// === Base colors ===
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+
+// === Raw Colors ===
 :root {
   --font: "Inter", sans-serif;
   --clr-primary-100: #f26cf9;
@@ -40,17 +42,62 @@
   --clr-grey-cool-100: #131314;
 }
 
+// == Typography ==
+$font-family-regular: "Inter", sans-serif;
 
-*,
-*::after,
-*::before {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+$font-size-10px: 0.625rem;
+$font-size-11px: 0.6875rem;
+$font-size-12px: 0.75rem;
+$font-size-14px: 0.875rem;
+$font-size-16px: 1rem;
+$font-size-18px: 1.125rem;
+$font-size-20px: 1.25rem;
+$font-size-22px: 1.375rem;
+$font-size-24px: 1.5rem;
+$font-size-26px: 1.625rem;
+$font-size-28px: 1.75rem;
+$font-size-32px: 2rem;
+
+$font-weight-regular: 400;
+$font-weight-medium: 500;
+$font-weight-semibold: 600;
+$font-weight-bold: 700;
+
+
+
+
+// === Semantic Tokens ===
+:root {
+  // Colors
+  --clr-body-background: var(--clr-grey-20);
+  --clr-body-text: var(--clr-grey-100);
+
+  --clr-card-background: var(--clr-grey-10);
 }
 
 
+
+// === Reset ===
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 a {
-    text-decoration: none;
-    color: inherit;
+  text-decoration: none;
+  color: inherit;
+}
+
+body,
+html {
+  font-family: $font-family-regular;
+  font-weight: $font-weight-regular;
+  font-size: $font-size-16px;
+  font-style: normal;
+  line-height: normal;
+  color: var(--clr-body-text);
+  background-color: var(--clr-body-background);
 }

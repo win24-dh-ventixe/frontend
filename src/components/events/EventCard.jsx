@@ -6,10 +6,10 @@ import styles from "./EventCard.module.scss";
 const EventCard = ({ event }) => {
   return (
     <Link to={`/events/${event.id}`} className={styles.link}>
-      <article className={styles.card}>
+    <article className={`card {$styles.card}`}>
         <img
           className={styles.image}
-          src="/public/images/placeholder-event.jpg"
+          src="/images/placeholder-event.jpg"
           alt={`Image for ${event.name}`}
         />
         <span className="badge badge--category">{event.category}</span>
