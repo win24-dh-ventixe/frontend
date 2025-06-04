@@ -1,5 +1,5 @@
 import { Route, Routes } from "react-router-dom";
-import EventCard from "./components/events/EventCard";
+import EventCard from "./components/EventCard";
 
 const sampleEvent = {
   id: 1,
