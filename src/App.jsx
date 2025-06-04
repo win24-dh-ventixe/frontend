@@ -1,5 +1,7 @@
 import { Route, Routes } from "react-router-dom";
 import EventCard from "./components/EventCard";
+import AppLayout from "./pages/AppLayout";
+import EventPage from "./pages/EventsPage";
 
 const sampleEvent = {
   id: 1,
@@ -13,7 +15,8 @@ const sampleEvent = {
 function App() {
   return (
     <Routes>
-      <Route path="/" element={<EventCard event={sampleEvent} />} />
+      <Route path="/event" element={<EventCard event={sampleEvent} />} />
+      <Route path="/" element={<EventPage />} />
     </Routes>
   );
 }
