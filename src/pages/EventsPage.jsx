@@ -10,9 +10,13 @@ const dummyEvents = [
 const EventPage = () => {
   return (
     <AppLayout>
-      {dummyEvents.map(event => (
-        <EventCard key={event.id} event={event} />
-      ))}
+      <div className="event-layout">
+        {dummyEvents.map(event => (
+          <div className="event-slot" key={event.id}>
+            <EventCard event={event} />
+          </div>
+        ))}
+      </div>
     </AppLayout>
   );
 };

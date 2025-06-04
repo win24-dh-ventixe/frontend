@@ -29,11 +29,12 @@ const formatDate = (dateString) => {
         </span>
 
         <div className="event-card__body">
-          <time className="event-card__date" dateTime={event.date}>
-            {formatDate(event.date)}
-          </time>
-
-          <h3 className="event-card__title">{event.name}</h3>
+          <div className="event-card__main">
+            <time className="event-card__date" dateTime={event.date}>
+                {formatDate(event.date)}
+            </time>
+            <h3 className="event-card__title">{event.name}</h3>
+          </div>
 
           <div className="event-card__footer">
             <p className="event-card__location">{event.location}</p>
