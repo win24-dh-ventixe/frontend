@@ -7,14 +7,17 @@
   overflow: hidden;
   display: flex;
   flex-direction: column;
-
-  border: 2px solid blue;
-
   height: 300px;
   width: 100%;
   max-width: 420px;
   margin-inline: auto;
-  // align-self: start;  
+  transition: transform 200ms ease, box-shadow 200ms ease;
+
+  &:hover {
+    transform: scale(1.02);
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.5);
+  }
+
 
   &__link {
     display: block;
@@ -123,5 +126,72 @@
 
   &--active {
     background-color: var(--badge-clr-dot-active);
+  }
+}
+
+
+
+
+
+
+.booking-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100dvh;
+  padding: 2rem;
+
+  &__form {
+    background: #fff;
+    border: 1px solid #ccc;
+    padding: 2rem;
+    border-radius: 0.5rem;
+    width: 100%;
+    max-width: 400px;
+    box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.1);
+  }
+
+  &__title {
+    margin-bottom: 1.5rem;
+    font-size: 1.5rem;
+    text-align: center;
+  }
+
+  &__event-id {
+    font-size: 0.9rem;
+    margin-bottom: 1rem;
+    color: #555;
+    text-align: center;
+  }
+
+  &__label {
+    display: block;
+    margin-bottom: 1rem;
+    font-weight: bold;
+  }
+
+  &__input {
+    width: 100%;
+    padding: 0.5rem;
+    font-size: 1rem;
+    margin-top: 0.25rem;
+    border: 1px solid #ccc;
+    border-radius: 0.25rem;
+  }
+
+  &__button {
+    margin-top: 1rem;
+    width: 100%;
+    padding: 0.75rem;
+    background: var(--clr-primary-100);
+    color: #fff;
+    font-size: 1rem;
+    border: none;
+    border-radius: 0.25rem;
+    cursor: pointer;
+
+    &:hover {
+      background: #0056b3;
+    }
   }
 }
