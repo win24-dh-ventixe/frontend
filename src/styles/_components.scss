@@ -1,3 +1,38 @@
+.btn {
+    padding: 0.8rem 1.2rem;
+    width: 240px;
+    border-radius: 2rem;
+    background-color: var(--clr-primary-100);
+    border: 1px solid var(--clr-primary-90);
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 150ms ease, transform 150ms ease;
+
+    &:hover {
+      transform: scale(1.01);
+      background-color: #e255e0;
+    }
+
+    // &-small {
+    //   padding: 6px;
+    //   border-radius: 30px;
+    // }
+
+    // &-medium {
+    //   padding: 14px 8px;
+    //   border-radius: 36px;
+    // }
+    
+    // &-large {
+    //   padding: 16px 10px;
+    //   border-radius: 40px;
+    // }
+}
+
+
+
+
 // === Card ===
 .event-card {
   background-color: var(--clr-card-background);
@@ -13,7 +48,8 @@
   margin-inline: auto;
   transition: transform 200ms ease, box-shadow 200ms ease;
 
-  &:hover {
+  &:hover,
+  &:focus {
     transform: scale(1.02);
     box-shadow: 0 0 8px rgba(0, 0, 0, 0.5);
   }
@@ -190,7 +226,8 @@
     border-radius: 0.25rem;
     cursor: pointer;
 
-    &:hover {
+    &:hover,
+    &:focus {
       background: #0056b3;
     }
   }

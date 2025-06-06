@@ -1,8 +1,7 @@
 import { Route, Routes } from "react-router-dom";
 import EventCard from "./components/EventCard";
-import AppLayout from "./pages/AppLayout";
 import EventPage from "./pages/EventsPage";
-import BookingPage from "./pages/BookingPage";
+import EventDetailsPage from "./pages/EventDetailsPage";
 
 const sampleEvent = {
   id: 1,
@@ -16,9 +15,9 @@ const sampleEvent = {
 function App() {
   return (
     <Routes>
-      <Route path="/event" element={<EventCard event={sampleEvent} />} />
       <Route path="/" element={<EventPage />} />
-      <Route path="/booking" element={<BookingPage />} />
+      <Route path="/event" element={<EventCard event={sampleEvent} />} />
+      <Route path="/events/:eventId" element={<EventDetailsPage />} />
     </Routes>
   );
 }
