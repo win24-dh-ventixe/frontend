@@ -30,10 +30,10 @@ const formatDate = (dateString) => {
 
         <div className="event-card__body">
           <div className="event-card__main">
-            <time className="event-card__date" dateTime={event.date}>
+            <time className="event-card__date" dateTime={event.start}>
                 {formatDate(event.start)}
             </time>
-            <h3 className="event-card__title">{event.name}</h3>
+            <h3 className="event-card__title">{event.title}</h3>
           </div>
 
           <div className="event-card__footer">

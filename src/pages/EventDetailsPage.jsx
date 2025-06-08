@@ -66,12 +66,13 @@ const EventDetailsPage = () => {
       <div className="container">
         <main className="event-details-page">
           <section className="event-details">
-            <h1>{event.name}</h1>
+            <h1>{event.title}</h1>
+            <p><strong>Description:</strong> {event.description}</p>
             <p>
               <strong>Category:</strong> {event.category}
             </p>
             <p>
-              <strong>Date:</strong> {new Date(event.date).toLocaleString()}
+              <strong>Date:</strong> {new Date(event.start).toLocaleString()}
             </p>
             <p>
               <strong>Location:</strong> {event.location}
