@@ -1,0 +1,44 @@
+.badge {
+  font-size: var(--badge-font-default);
+  padding-inline: 0.625rem;
+  padding-block: 0.25rem;
+  border-radius: 1.5rem;
+  display: inline-flex;
+  align-items: center;
+}
+
+.badge--active {
+  background-color: var(badge-clr-bg-active);
+  color: var(--badge-clr-text-active);
+}
+
+.badge--canceled {
+  background-color: var(--badge-clr-bg-canceled);
+  color: var(--badge-clr-text-canceled);
+}
+
+.badge--category {
+  background-color: var(--badge-clr-bg-category);
+  color: var(--badge-clr-text-category);
+}
+
+.badge--confirmed {
+  background-color: var(--badge-clr-bg-confirmed);
+  color: var(--badge-clr-text-confirmed);
+}
+
+.badge--pending {
+  background-color: var(--badge-clr-bg-pending);
+  color: var(--badge-clr-text-pending);
+}
+
+.status-dot {
+  width: 0.5rem;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  margin-right: 0.25em;
+
+  &--active {
+    background-color: var(--badge-clr-dot-active);
+  }
+}

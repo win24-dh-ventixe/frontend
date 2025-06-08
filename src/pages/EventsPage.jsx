@@ -1,38 +1,28 @@
-import AppLayout from "./AppLayout";
+import AppLayout from "../components/AppLayout";
 import EventCard from "../components/EventCard";
-
-const dummyEvents = [
-  {
-    id: 1,
-    name: "Trappramlarn Fest",
-    location: "Etern",
-    price: 299,
-    date: "2025-07-11T17:00",
-    category: "Musik",
-  },
-  {
-    id: 2,
-    name: "Grill med Trapp",
-    location: "Trappträsk",
-    price: 99,
-    date: "2025-08-01T18:00",
-    category: "Outdoor",
-  },
-  {
-    id: 3,
-    name: "Trappmässa",
-    location: "Trappköping",
-    price: 149,
-    date: "2025-09-10T14:00",
-    category: "Expo",
-  },
-];
+import { API_BASE_EVENTS } from "../config/api";
+import { useEffect, useState } from "react";
 
 const EventPage = () => {
+  const [events, setEvents] = useState([]);
+
+  useEffect(() => {
+    fetch(API_BASE_EVENTS)
+      .then((res) => {
+        console.log("Statud:", res.status);
+        return res.json();
+      })
+      .then((data) => {
+        console.log("Data collected:", data);
+        setEvents(data);
+      })
+      .catch((err) => console.error("Could not fetch events", err));
+  }, []);
+
   return (
     <AppLayout>
       <div className="event-layout">
-        {dummyEvents.map((event) => (
+        {events.map((event) => (
           <div className="event-slot" key={event.id}>
             <EventCard event={event} />
           </div>

@@ -8,12 +8,11 @@ return (
             <div className="layout">
                 <header className="layout__header">
                     <div className="header__logo">
-                        <img className="header__logo-img" src="/public/images/logos/ventixe-logotype.svg" alt="" />
+                        <img className="header__logo-img" src="/images/logos/ventixe-logotype.svg" alt="" />
                         <h2 className="header__logo-text">Ventixe</h2>
                     </div>
                     <h1 className="header__text">Events</h1>
                 </header>
-                {/* <nav className="layout__nav">Nav</nav> */}
                 <main className="layout__content">{children}</main>
                 <footer className="layout__footer">Footer</footer>
             </div>

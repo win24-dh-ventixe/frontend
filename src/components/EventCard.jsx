@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 import React from "react";
 
 const EventCard = ({ event }) => {
-
+  
 const formatDate = (dateString) => {
     const date = new Date(dateString);
     const options = { 
@@ -31,7 +31,7 @@ const formatDate = (dateString) => {
         <div className="event-card__body">
           <div className="event-card__main">
             <time className="event-card__date" dateTime={event.date}>
-                {formatDate(event.date)}
+                {formatDate(event.start)}
             </time>
             <h3 className="event-card__title">{event.name}</h3>
           </div>

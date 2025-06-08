@@ -1,0 +1,19 @@
+.event-details-page {
+    padding: 4rem 2rem;
+    margin: 0 auto;
+    background-color: var(--clr-grey-10);
+    width: 700px;
+    border-radius: 1rem;
+    border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 4rem;
+}
+
+.event-details,
+.booking-form {
+    height: auto;
+    min-height: unset;
+    margin: 0;
+}

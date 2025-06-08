@@ -1,0 +1,102 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+
+:root {
+    // === THEME: ===
+
+    // --- Typography ---
+    --font-family-base: "Inter", sans-serif;
+    --font-size-10px: 0.625rem;
+    --font-size-12px: 0.75rem;
+    --font-size-14px: 0.875rem;
+    --font-size-16px: 1rem;
+    --font-size-18px: 1.125rem;
+    --font-size-24px: 1.5rem;
+    --font-size-32px: 2rem;
+    --font-weight-regular: 400;
+    --font-weight-medium: 500;
+    --font-weight-semibold: 600;
+    --font-weight-bold: 700;
+
+    // --- Base Colors ---
+    --clr-primary-100: #f26cf9;
+    --clr-primary-90: #f589fa;
+    --clr-primary-50: #fcd3fe;
+    --clr-primary-40: #fce2fe;
+    --clr-primary-30: #fdedfe;
+    
+    --clr-secondary-110: #1c2346;
+    --clr-secondary-100: #37437d;
+    --clr-secondary-90: #5562a2;
+    --clr-secondary-70: #707dbf;
+    --clr-secondary-60: #abb4dd;
+    --clr-secondary-50: #d3daf9;
+    
+    --clr-yellow-100: #ffca39;
+    --clr-yellow-90: #ffefc3;
+
+    --clr-grey-10: #ffffff;
+    --clr-grey-20: #f7f7f7;
+    --clr-grey-30: #ededed;
+    --clr-grey-40: #e0e0e1;
+    --clr-grey-50: #c3c3c4;
+    --clr-grey-60: #9f9fa1;
+    --clr-grey-70: #777779;
+    --clr-grey-80: #636365;
+    --clr-grey-90: #434345;
+    --clr-grey-100: #1e1e20;
+
+    --clr-grey-cool-10: #eeefff;
+    --clr-grey-cool-20: #e4e5f5;
+    --clr-grey-cool-30: #dddeed;
+    --clr-grey-cool-40: #d1d2e0;
+    --clr-grey-cool-50: #b0b1bd;
+    --clr-grey-cool-60: #8f8f99;
+    --clr-grey-cool-70: #72737a;
+    --clr-grey-cool-80: #56565c;
+    --clr-grey-cool-90: #39393d;
+    --clr-grey-cool-100: #131314;
+
+    // --- Semantic Tokens (Light Mode) ---
+    --clr-body-background: var(--clr-grey-20);
+    --clr-body-text: var(--clr-grey-100);
+    --clr-component-background: var(--clr-grey-10);
+    --clr-component-border: var(--clr-grey-40);
+    --clr-link-hover: var(--clr-primary-90);
+
+    // Card Tokens
+    --card-clr-bg: var(--clr-component-background);
+    --card-clr-text-header: var(--clr-body-text);
+    --card-clr-text-muted: var(--clr-grey-70);
+    --card-clr-accent: var(--clr-primary-100);
+
+    // Badge Tokens
+    --badge-font-default: var(--font-size-12px);
+
+    --badge-clr-bg-active: var(--clr-primary-30);
+    --badge-clr-bg-canceled: var(--clr-grey-cool-20);
+    --badge-clr-bg-confirmed: var(--clr-primary-50);
+    --badge-clr-bg-pending: var(--clr-grey-cool-10);
+    --badge-clr-bg-category: var(--clr-grey-10);
+
+    --badge-clr-text-active: var(--clr-secondary-100);
+    --badge-clr-text-canceled: var(--clr-grey-80);
+    --badge-clr-text-confirmed: var(--clr-secondary-100);
+    --badge-clr-text-pending: var(--clr-grey-80);
+    --badge-clr-text-category: var(--clr-secondary-100);
+
+    --badge-clr-dot-active: var(--clr-primary-100);
+
+}
+
+// [data-theme="dark"] {
+//     // --- Semantic Tokens (Dark Mode) ---
+//     --clr-body-background: #121212;
+//     --clr-body-text: var(--clr-grey-20);
+//     --clr-component-background: #1e1e1e;
+//     --clr-component-border: var(--clr-grey-80);
+//     --clr-link-hover: var(--clr-primary-90);
+    
+//     // Card Tokens
+//     --card-clr-text-header: var(--clr-grey-10);
+//     --card-clr-text-muted: var(--clr-grey-70);
+// }

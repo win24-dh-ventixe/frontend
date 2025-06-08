@@ -9,13 +9,11 @@ $bp-large: 1400px;
     @content;
   }
 }
-
 @mixin respond-desktop {
   @media (min-width: #{$bp-desktop}) {
     @content;
   }
 }
-
 @mixin respond-large {
   @media (min-width: #{$bp-large}) {
     @content;
